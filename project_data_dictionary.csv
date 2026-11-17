@@ -1,0 +1,17 @@
+column_name,working_description,planned_project_use
+point_id,Unique identifier for a sampled point,Identifier; not a model predictor
+lon,Longitude coordinate,Retain for mapping; exclude as predictor by default
+lat,Latitude coordinate,Retain for mapping; exclude as predictor by default
+flooded,Binary flood label: 1 or 0,Target variable to predict
+elevation,Ground elevation at the point,Candidate terrain predictor; confirm units
+slope,Terrain slope at the point,Candidate terrain predictor; confirm units
+local_relief_100,Local terrain relief over a 100-unit neighbourhood,Candidate terrain predictor; confirm neighbourhood and units
+local_relief_500,Local terrain relief over a 500-unit neighbourhood,Candidate terrain predictor; confirm neighbourhood and units
+concavity,Terrain concavity or landform-shape measure,Candidate terrain predictor; confirm calculation
+land_cover,Land-cover classification code,Categorical predictor; confirm class legend
+builtup_100,Built-up measure within a 100-unit neighbourhood,Candidate predictor; confirm scale and units
+builtup_500,Built-up measure within a 500-unit neighbourhood,Candidate predictor; confirm scale and units
+dist_river,Distance to mapped river feature,Candidate predictor; confirm units and source
+dist_stream,Distance to mapped stream feature,Candidate predictor; compare with dist_river
+dist_drain,Distance to mapped drainage feature,Excluded according to current project plan
+block_id,Identifier for a spatial block,Retain for spatial splitting; not a model predictor
